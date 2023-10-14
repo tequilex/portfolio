@@ -1,0 +1,18 @@
+@import '../../styles/vars.scss';
+
+.counter {
+  // padding: 64px;
+
+  .counter__border {
+    // border: 1px solid rgb(113, 113, 113);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.98rem 0;
+  }
+
+  .counter__number {
+    font-weight: bold;
+    color: $green;
+  }
+}

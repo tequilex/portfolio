@@ -1,0 +1,72 @@
+@import "../../index.scss";
+
+.about {
+  display: flex;
+  padding: 2rem 0;
+  align-items: center;
+  gap: 2rem;
+
+  .about__img-wrapper {
+    max-width: 450px;
+    min-width: 350px;
+    // min-width: 430px;
+    flex: 1;
+
+    @include tablets {
+    }
+  }
+
+  .about__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    text-align: justify;
+  }
+
+  .about__title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+    @include tablets {
+      font-size: 2.3rem;
+    }
+  }
+
+  .about__subtitle {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 0.85rem;
+
+    @include tablets {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  .about__tabs {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 1.7rem;
+  }
+
+  .about__text {
+    // padding-left: 17px;
+    max-width: 23rem;
+    justify-content: flex-start;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .about__text-item {
+    font-weight: 100;
+    font-size: 0.9rem;
+    color: $green;
+  }
+
+  @include tablets {
+    flex-direction: column;
+  }
+}

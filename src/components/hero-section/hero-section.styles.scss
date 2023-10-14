@@ -1,0 +1,75 @@
+@import '../../index.scss';
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6.5rem 0 2rem 0;
+
+  .hero__info {
+    max-width: 570px;
+
+    @include phones {
+      margin-bottom: 50px;
+    }
+  }
+
+  .hero__title {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+
+    @include tablets {
+      font-size: 3rem;
+    }
+  }
+
+  .hero__subtitle {
+    margin-bottom: 1.5rem;
+    font-size: 1.10rem;
+    font-weight: 500;
+    color: $grey;
+
+    @include tablets {
+      font-size: 1rem;
+    }
+  }
+
+  .hero__buttons {
+    display: flex;
+    gap: 35px;
+  }
+
+  .hero__button {
+    background: $purple;
+    border-radius: 6px;
+    padding: 0.65rem 2rem;
+  }
+  
+  .hero__avatar-wrapper {
+    position: relative;
+    height: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    background: rgba(113, 25, 135, 0.379);
+    border-radius: 100%;
+
+    @include tablets {
+      height: 250px;
+      max-width: 250px;
+      min-width: 250px;
+    }
+  }
+
+  .hero__avatar {
+    position: absolute;
+    bottom: 30px;
+    right: 21px;
+    max-width: 105%;
+  }
+
+  @include phones {
+    flex-direction: column;
+  }
+}

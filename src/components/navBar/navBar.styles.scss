@@ -1,0 +1,25 @@
+@import '../../styles/vars.scss';
+
+.navbar__wrapper {
+  width: 100%;
+  position: fixed;
+  background: $purple ;
+  padding: 15px 10px;
+  z-index: 1;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .nav__links {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  .nav__link {
+    cursor: pointer;
+  }
+}
+

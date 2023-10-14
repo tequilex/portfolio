@@ -1,0 +1,20 @@
+@import '../../index.scss';
+
+.projects {
+  padding: 2.5rem 0;
+
+  .projects__title {
+    text-align: center;
+    margin-bottom: 1.8rem;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+
+  .projects__cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.4rem;
+    justify-content: space-between;
+}
+}

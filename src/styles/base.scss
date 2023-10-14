@@ -1,0 +1,38 @@
+@import './mixins.scss';
+
+body {
+  margin: 0;
+  font-family: $font-main;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // background: $dark;
+  background: url('../../public/images/background.gif') center center;
+  backdrop-filter: blur(20px);
+  color: $white;
+  font-size: 16px;
+
+  @include tablets {
+    font-size: 14px;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 6px;              
+}
+body::-webkit-scrollbar-track {
+  background: $dark;       
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $purple;   
+  border-radius: 20px;      
+
+}
+
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 1rem 2.75rem;
+}
+
+// 1310px
+//1024px
