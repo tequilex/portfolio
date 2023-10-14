@@ -5,11 +5,15 @@ body {
   font-family: $font-main;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // background: $dark;
-  background: url('../../public/images/background.gif') center center;
-  backdrop-filter: blur(20px);
+  background: $dark;
+  // background: url('../../public/images/background.gif') center center;
+  // backdrop-filter: blur(20px);
   color: $white;
   font-size: 16px;
+
+  @include laptop {
+    font-size: 15px;
+  }
 
   @include tablets {
     font-size: 14px;
@@ -32,6 +36,10 @@ body::-webkit-scrollbar-thumb {
   max-width: 1310px;
   margin: 0 auto;
   padding: 1rem 2.75rem;
+
+  @include tablets {
+  padding: 1rem 2.3rem;
+  }
 }
 
 // 1310px

@@ -9,7 +9,7 @@
   .hero__info {
     max-width: 570px;
 
-    @include phones {
+    @include tablets-min {
       margin-bottom: 50px;
     }
   }
@@ -20,8 +20,16 @@
     line-height: 1.5;
     margin-bottom: 1rem;
 
-    @include tablets {
+    @include laptop {
       font-size: 3rem;
+    }
+
+    @include tablets {
+      font-size: 2rem;
+    }
+
+    @include tablets-min {
+      text-align: center;
     }
   }
 
@@ -31,14 +39,18 @@
     font-weight: 500;
     color: $grey;
 
-    @include tablets {
+    @include laptop {
       font-size: 1rem;
     }
   }
 
   .hero__buttons {
     display: flex;
-    gap: 35px;
+    gap: 1.75rem;
+
+    @include tablets-min {
+      flex-direction: column;
+    }
   }
 
   .hero__button {
@@ -55,10 +67,16 @@
     background: rgba(113, 25, 135, 0.379);
     border-radius: 100%;
 
-    @include tablets {
+    @include laptop {
       height: 250px;
       max-width: 250px;
       min-width: 250px;
+    }
+
+    @include tablets {
+      height: 225px;
+      max-width: 225px;
+      min-width: 225px;
     }
   }
 
@@ -69,7 +87,7 @@
     max-width: 105%;
   }
 
-  @include phones {
-    flex-direction: column;
+  @include tablets-min {
+    flex-direction: column-reverse;
   }
 }

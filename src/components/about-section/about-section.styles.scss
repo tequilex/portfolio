@@ -13,6 +13,8 @@
     flex: 1;
 
     @include tablets {
+      max-width: 350px;
+      min-width: 250px;
     }
   }
 
@@ -29,8 +31,13 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
 
-    @include tablets {
+    @include laptop {
+      text-align: center;
       font-size: 2.3rem;
+    }
+
+    @include tablets-min {
+      font-size: 1.9rem;
     }
   }
 
@@ -39,9 +46,13 @@
     line-height: 1.75rem;
     margin-bottom: 0.85rem;
 
-    @include tablets {
+    @include laptop {
       font-size: 1rem;
       line-height: 1.5rem;
+    }
+
+    @include tablets-min {
+      font-size: 0.95rem;
     }
   }
 
@@ -49,15 +60,23 @@
     display: flex;
     gap: 30px;
     margin-bottom: 1.7rem;
+
+    @include tablets-min {
+      margin-bottom: 1rem;
+    }
   }
 
   .about__text {
-    // padding-left: 17px;
     max-width: 23rem;
     justify-content: flex-start;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+
+    @include tablets-min {
+      flex-direction: column;
+      gap: 0.7rem;
+    }
   }
 
   .about__text-item {

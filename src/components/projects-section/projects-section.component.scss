@@ -8,6 +8,10 @@
     margin-bottom: 1.8rem;
     font-weight: bold;
     font-size: 2rem;
+
+    @include tablets-min {
+      font-size: 1.7rem;
+    }
   }
 
 
@@ -16,5 +20,14 @@
     flex-wrap: wrap;
     row-gap: 1.4rem;
     justify-content: space-between;
+
+    @include laptop {
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    @include tablets-min {
+      row-gap: 1.6rem;
+    }
 }
 }
