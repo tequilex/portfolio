@@ -11,7 +11,7 @@ const projects = [
     image: "./images/projects/taxi.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/tequilex/loft-taxi-react",
-    previewUrl: "/",
+    previewUrl: "https://loft-taxi-react.vercel.app/",
   },
   {
     id: 2,
