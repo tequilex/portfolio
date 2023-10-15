@@ -1,7 +1,7 @@
 .group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   .form__input__label {
     margin-bottom: 6px;
@@ -17,12 +17,14 @@
   }
 
   .textarea {
+    padding: 10px 10px 10px 5px;
     border-radius: 6px;
     border: 1px solid rgba(130, 126, 126, 0.451);
     background: rgba(128, 128, 128, 0.068);
     color: white;
     font-family: "IBM Plex Mono";
-    max-width: 506px;
-    max-height: 10rem;
+    max-width: 100%;
+    height: 5rem;
+    resize: none;
   }
 }

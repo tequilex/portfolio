@@ -10,7 +10,7 @@ import "./contact-section.styles.scss";
 
 const ContactSection = () => {
   return (
-    <div className="contacts">
+    <div className="contacts" id="contacts">
       <div className="contacts__wrapper">
         <div className="contacts__title">Let`'s Connect</div>
         <p className="contacts__text">

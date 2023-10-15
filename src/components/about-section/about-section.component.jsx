@@ -44,7 +44,7 @@ const AboutSection = () => {
   // console.log(data);
 
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about__img-wrapper">
         <img className="about__img" src={aboutImg} alt="about_image" />
       </div>

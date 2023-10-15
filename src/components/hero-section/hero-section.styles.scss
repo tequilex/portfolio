@@ -1,10 +1,12 @@
 @import '../../index.scss';
 
+.hero__wrapper {
+  
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6.5rem 0 2rem 0;
+  padding: 3rem 0 2rem 0;
 
   .hero__info {
     max-width: 570px;
@@ -31,6 +33,14 @@
     @include tablets-min {
       text-align: center;
     }
+  }
+
+  .hero__title-one {
+    // color: $purple;
+  }
+
+  .hero__title-two {
+    color: $green;
   }
 
   .hero__subtitle {
@@ -64,7 +74,7 @@
     height: 300px;
     max-width: 300px;
     min-width: 300px;
-    background: rgba(113, 25, 135, 0.379);
+    background: rgba($color: $purple, $alpha: 0.5);
     border-radius: 100%;
 
     @include laptop {
@@ -90,4 +100,6 @@
   @include tablets-min {
     flex-direction: column-reverse;
   }
+}
+
 }

@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .tab__button {
   font-weight: bold;
 
@@ -6,7 +8,7 @@
   }
 
   .tab__button-footer {
-    border-bottom: 5px solid purple;
+    border-bottom: 5px solid $purple;
     border-radius: 1px;
   }
 }

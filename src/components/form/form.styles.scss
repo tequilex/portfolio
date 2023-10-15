@@ -1,3 +1,10 @@
+@import '../../index.scss';
+
 .form__wrapper {
   flex: 1;
+
+  .status {
+    color: $green;
+    margin-bottom: 0.9rem;
+  }
 }
