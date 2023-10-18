@@ -6,8 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: $dark;
-  // background: url('../../public/images/background.gif') center center;
-  // backdrop-filter: blur(20px);
+  background: url('../../public/images/back3.gif') center center;
+  backdrop-filter: blur(30px);
   color: $white;
   font-size: 16px;
 
@@ -17,7 +17,12 @@ body {
 
   @include tablets {
     font-size: 14px;
+    
   }
+}
+
+body.navbar__wrapper.active {
+  overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -35,11 +40,11 @@ body::-webkit-scrollbar-thumb {
 .container {
   max-width: 1310px;
   margin: 0 auto;
-  padding: 1rem 2.75rem;
-  margin-top: 3rem;
+  padding: 3rem 2.75rem;
+
 
   @include tablets {
-  padding: 1rem 2.3rem;
+  padding: 3rem 2.3rem;
   }
 }
 
