@@ -1,9 +1,12 @@
 @import "../../index.scss";
 
 .about {
+  border-left: 2px dashed $purple;
+  border-bottom: 2px dashed $purple;
+  // border-bottom-left-radius: 50px;
   display: flex;
-  padding: 2rem 0;
-  align-items: center;
+  padding: 2rem 0.7rem;
+  // align-items: center;
   gap: 2rem;
 
   .about__img-wrapper {
@@ -71,10 +74,9 @@
     justify-content: flex-start;
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
+    flex-direction: column;
 
     @include tablets-min {
-      flex-direction: column;
       gap: 0.7rem;
     }
   }
@@ -87,5 +89,6 @@
 
   @include tablets {
     flex-direction: column;
+    align-items: center;
   }
 }

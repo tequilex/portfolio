@@ -44,13 +44,13 @@ const NavBar = () => {
         </div>
         <div className="nav__links">
           <a href="#about" className="nav__link" onClick={hideMenu}>
-            About
+            Обо мне
           </a>
           <a href="#projects" className="nav__link" onClick={hideMenu}>
-            Projects
+            Проекты
           </a>
           <a href="#contacts" className="nav__link" onClick={hideMenu}>
-            Contact
+            Контакты
           </a>
         </div>
       </div>

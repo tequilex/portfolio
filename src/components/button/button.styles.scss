@@ -5,4 +5,9 @@
   background: $purple;
   width: 100%;
   border-radius: 6px;
+  transition: 0.5s;
+
+  &:hover {
+    background: $hover-btn;
+  }
 }

@@ -3,7 +3,7 @@ import "./form-input.styles.scss";
 const FormInput = ({ label, ...other }) => {
   return (
     <div className="group">
-      {label === "Message" ? (
+      {label === "Сообщение" ? (
         <>
           <label className="form__input__label">{label}</label>
           <textarea className="textarea" {...other}/>

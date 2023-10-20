@@ -1,8 +1,10 @@
 @import '../../index.scss';
 
 .contacts {
+  border-left: 2px dashed $purple;
+  border-bottom: 2px dashed $purple;
   display: flex;
-  padding: 2rem 0;
+  padding: 2rem 0.7rem;
   gap: 2rem;
 
   .contacts__wrapper {
@@ -29,6 +31,11 @@
 
   .contacts__item {
     width: 2.5rem;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.4) rotate(360deg);
+    }
   }
 
   @include tablets-min {

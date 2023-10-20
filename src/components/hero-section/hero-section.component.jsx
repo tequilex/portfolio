@@ -2,6 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import avatar from "../../assets/sticker.png";
+import resume from '../../resume.pdf'
 import "./hero-section.styles.scss";
 
 export const HeroSection = () => {
@@ -15,7 +16,7 @@ export const HeroSection = () => {
       >
         <div className="hero__info">
           <h1 className="hero__title">
-            <span className="hero__title-one">Hello I'am</span>
+            <span className="hero__title-one">Привет я </span>
             <br />
             <TypeAnimation
               className="hero__title-two"
@@ -33,12 +34,11 @@ export const HeroSection = () => {
             />
           </h1>
           <p className="hero__subtitle">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            error sunt odit doloribus perspiciatis.
+            Буду рад новым знакомствам!
           </p>
           <div className="hero__buttons">
-            <button className="hero__button">Hire me</button>
-            <button className="hero__button">Download cv</button>
+            <a href="#contacts" className="hero__button">Связаться со мной</a>
+            <a href={resume} className="hero__button" download='resume_andrew_tequilex'>Скачать резюме</a>
           </div>
         </div>
         <div className="hero__avatar-wrapper">

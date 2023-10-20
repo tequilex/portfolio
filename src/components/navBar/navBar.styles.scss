@@ -64,6 +64,11 @@
   .nav__link {
     cursor: pointer;
     color: $white;
+    transition: 0.5s;
+
+    &:hover {
+      color: $hover-btn;
+    }
 
     @include tablets {
       display: none;

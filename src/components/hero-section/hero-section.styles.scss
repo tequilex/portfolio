@@ -1,19 +1,18 @@
 @import '../../index.scss';
 
 .hero__wrapper {
-  
+  border-right: 2px dashed $purple;
+  border-bottom: 2px dashed $purple;
+  // border-bottom-right-radius: 50px;
+
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 0 2rem 0;
+  padding: 3rem 0.7rem 2rem 0.7rem;
 
   .hero__info {
     max-width: 570px;
-
-    @include tablets-min {
-      margin-bottom: 50px;
-    }
   }
 
   .hero__title {
@@ -55,6 +54,7 @@
   }
 
   .hero__buttons {
+    text-align: center;
     display: flex;
     gap: 1.75rem;
 
@@ -64,9 +64,15 @@
   }
 
   .hero__button {
+    color: $white;
     background: $purple;
     border-radius: 6px;
     padding: 0.65rem 2rem;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: $hover-btn;
+    }
   }
   
   .hero__avatar-wrapper {

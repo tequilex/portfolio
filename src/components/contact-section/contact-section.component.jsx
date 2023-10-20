@@ -12,11 +12,11 @@ const ContactSection = () => {
   return (
     <div className="contacts" id="contacts">
       <div className="contacts__wrapper">
-        <div className="contacts__title">Let`'s Connect</div>
+        <div className="contacts__title">Контакты</div>
         <p className="contacts__text">
-          I'm currently looking for new opportunities, my inbox is always open.
-          Whether you have a question or just want to say hi, I'll try my best
-          to get back to you!
+          В настоящее время я ищу новые возможности, мой почтовый ящик всегда
+          открыт. Независимо от того, есть ли у вас вопрос или вы просто хотите
+          поздороваться, я сделаю все возможное, чтобы ответить вам!
         </p>
         <ul className="contacts__list">
           <li className="contacts__item">

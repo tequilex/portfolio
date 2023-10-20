@@ -58,7 +58,7 @@ const CounterSection = () => {
     <div className="counter">
       <div className="counter__border">
         {numbers.map((number, index) => {
-          return <div className="counter__number" key={index}>{number.value}</div>;
+          return <div className="counter__number" key={index}>{number.value}</div>
         })}
       </div>
     </div>

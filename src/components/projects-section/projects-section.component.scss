@@ -1,7 +1,10 @@
 @import '../../index.scss';
 
 .projects {
-  padding: 2.5rem 0;
+  border-right: 2px dashed $purple;
+  border-bottom: 2px dashed $purple;
+  // border-bottom-right-radius: 50px;
+  padding: 2.5rem 0.7rem;
 
   .projects__title {
     text-align: center;

@@ -1,14 +1,19 @@
 @import './mixins.scss';
 
+@font-face {
+  font-family: 'minecraft';
+  src: url('../Fixedsys62.ttf');
+}
+
 body {
   margin: 0;
-  font-family: $font-main;
+  font-family: 'minecraft';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: $dark;
-  background: url('../../public/images/back3.gif') center center;
-  backdrop-filter: blur(30px);
+  // background: url('../../public/images/back3.gif') center center;
   color: $white;
+  // backdrop-filter: blur(50px);
   font-size: 16px;
 
   @include laptop {
@@ -20,6 +25,7 @@ body {
     
   }
 }
+
 
 body.navbar__wrapper.active {
   overflow: hidden;
@@ -41,6 +47,7 @@ body::-webkit-scrollbar-thumb {
   max-width: 1310px;
   margin: 0 auto;
   padding: 3rem 2.75rem;
+
 
 
   @include tablets {

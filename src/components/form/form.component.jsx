@@ -50,23 +50,23 @@ const Form = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
         <FormInput
-          label="Subject"
+          label="Тема"
           type="text"
-          placeholder="Just saying hi"
+          placeholder="Привет"
           required
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <FormInput
-          label="Message"
+          label="Сообщение"
           type="text"
-          placeholder="Let's talk about..."
+          placeholder="Давайте поговорим о ..."
           required
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
         {status && (<div className="status">Ваше сообщение отправлено!</div>)}
-        <Button type='submit'>Send message</Button>
+        <Button type='submit'>Отправить сообщение</Button>
       </form>
     </div>
   );
