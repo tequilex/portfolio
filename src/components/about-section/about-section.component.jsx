@@ -40,14 +40,13 @@ const datas = [
 ];
 
 const AboutSection = () => {
-  const [isActive, setActive] = useState('tab__button-footer active')
-  const [data, setData] = useState(datas[0].stacks);
+  const [isdata, setData] = useState(datas[0].stacks);
 
   const handleChange = (data) => {
     setData(data);
   };
 
-
+  console.log(isdata);
   return (
     <div className="about" id="about">
       <div className="about__img-wrapper">
@@ -69,16 +68,17 @@ const AboutSection = () => {
               <TabButton
                 key={data.id}
                 change={() => handleChange(data.stacks)}
+                active={data.stacks === isdata ? true : false}
                 data={data}
               />
             );
           })}
         </div>
         <ul className="about__text">
-          {data.map((stack, index) => {
+          {isdata.map((data, index) => {
             return (
               <li className="about__text-item" key={index}>
-                {stack}
+                {data}
               </li>
             );
           })}

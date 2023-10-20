@@ -1,13 +1,24 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { ReactComponent as Brackets } from "../../assets/brackets.svg";
 import { ReactComponent as Eye } from "../../assets/eye.svg";
 import "./project-card.styles.scss";
 
 const ProjectCard = ({ project, index }) => {
+  const [open, setOpen] = useState(false);
+  const [isActive, setIsActive] = useState("project__description");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const { title, description, image, gitUrl, previewUrl } = project;
+
+  const activeToggler = () => {
+    if (!open) {
+      setIsActive("project__description active");
+    } else {
+      setIsActive("project__description");
+    }
+    setOpen(!open);
+  };
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
@@ -41,8 +52,15 @@ const ProjectCard = ({ project, index }) => {
         </div>
         <img className="project__img" src={image} alt={`${title}`} />
       </div>
-      <div className="project__title">{title}</div>
-      <div className="project__description">{description}</div>
+      <div className="project__title">
+        {title}
+      </div>
+      <div className={isActive}>{description}</div>
+      {!open ? (
+        <div onClick={activeToggler} className="toggle">Развернуть</div>
+      ) : (
+        <div onClick={activeToggler} className="toggle">Свернуть</div>
+      )}
     </motion.div>
   );
 };

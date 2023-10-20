@@ -22,7 +22,6 @@ body {
 
   @include tablets {
     font-size: 14px;
-    
   }
 }
 
@@ -34,13 +33,14 @@ body.navbar__wrapper.active {
 body::-webkit-scrollbar {
   width: 6px;              
 }
+
 body::-webkit-scrollbar-track {
   background: $dark;       
 }
+
 body::-webkit-scrollbar-thumb {
   background-color: $purple;   
   border-radius: 20px;      
-
 }
 
 .container {
@@ -48,10 +48,12 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
   padding: 3rem 2.75rem;
 
-
-
   @include tablets {
   padding: 3rem 2.3rem;
+  }
+
+  @include phones {
+    padding: 3rem 1.3rem;
   }
 }
 
