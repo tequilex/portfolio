@@ -48,10 +48,6 @@
     font-size: 1.10rem;
     font-weight: 500;
     color: $grey;
-
-    @include laptop {
-      font-size: 1rem;
-    }
   }
 
   .hero__buttons {
@@ -70,6 +66,8 @@
     border-radius: 6px;
     padding: 0.65rem 2rem;
     transition: 0.5s;
+    font-size: 1rem;
+    font-weight: bold;
 
     &:hover {
       background-color: $hover-btn;

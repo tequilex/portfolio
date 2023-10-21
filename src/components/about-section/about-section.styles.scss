@@ -51,12 +51,8 @@
     margin-bottom: 0.85rem;
 
     @include laptop {
-      font-size: 1rem;
-      line-height: 1.5rem;
-    }
-
-    @include tablets-min {
-      font-size: 0.95rem;
+      font-size: 1.095rem;
+      line-height: 1.6rem;
     }
   }
 
@@ -71,11 +67,12 @@
   }
 
   .about__text {
-    max-width: 23rem;
+    max-width: 26.5rem;
     justify-content: flex-start;
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    min-height: 150px;
 
     @include tablets-min {
       gap: 0.7rem;
@@ -83,8 +80,8 @@
   }
 
   .about__text-item {
-    font-weight: 100;
-    font-size: 0.9rem;
+    font-weight: bold;
+    font-size: 1rem;
     color: $green;
   }
 

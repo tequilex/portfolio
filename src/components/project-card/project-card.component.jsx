@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { ReactComponent as Brackets } from "../../assets/brackets.svg";
 import { ReactComponent as Eye } from "../../assets/eye.svg";
+import { ReactComponent as Click } from "../../assets/click.svg";
 import "./project-card.styles.scss";
 
 const ProjectCard = ({ project, index }) => {
@@ -35,9 +36,10 @@ const ProjectCard = ({ project, index }) => {
       animate={isInView ? "animate" : "initial"}
     >
       <div className="project__img-container">
+        <Click className="click" />
         <div className="overlay">
           <a href={gitUrl} className="link" target="_blank" rel="noreferrer">
-            <Brackets />
+            <Brackets className="icon__url" />
           </a>
           {previewUrl && (
             <a
@@ -46,7 +48,7 @@ const ProjectCard = ({ project, index }) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Eye />
+              <Eye className="icon__url" />
             </a>
           )}
         </div>

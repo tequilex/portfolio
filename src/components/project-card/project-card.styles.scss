@@ -9,6 +9,21 @@
   .project__img-container {
     margin-bottom: 0.2rem;
     position: relative;
+
+    &:hover .overlay {
+      display: flex;
+    }
+
+    &:hover .click {
+      display: none;
+    }
+  }
+
+  .click {
+    display: block;
+    width: 40px;
+    position: absolute;
+    top: 7px;
   }
 
   .project__img {
@@ -18,6 +33,7 @@
   }
 
   .project__title {
+    color: $green;
     padding-left: 0.3rem;
     font-weight: bold;
     font-size: 1.2rem;
@@ -25,10 +41,12 @@
   }
 
   .project__description {
+    font-size: 1rem;
+    line-height: 1.6rem;
     text-align: justify;
-    color: $grey;
+    color: $white;
     padding: 0 1rem 1rem 0.3rem ;
-    height: 30px;
+    height: 55px;
     overflow: hidden ;
     transition: 0.4s;
     background: linear-gradient(180deg, rgba(34, 35, 36, 0) 0%, $green 200%);
@@ -36,12 +54,12 @@
 
 
   .project__description.active {
-    height: 150px;
+    height: 170px;
     overflow: auto;
     background: transparent;
 
     @include tablets-min {
-      height: 100px;
+      height: 200px;
     }
   }
   
@@ -66,13 +84,12 @@
   }
 
   .overlay {
-    opacity: 0;
+    display: none;
     position: absolute;
     background-color: rgba(42, 42, 42, 0.786);
     backdrop-filter: (50px);
     width: 100%;
     height: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
     gap: 4rem;
@@ -83,8 +100,13 @@
       width: 20%;
     }
 
-    &:hover {
-      opacity: 1;
+    .icon__url {
+      fill: $grey;
+      transition: 0.3s;
+
+      &:hover {
+        fill: $white;
+      }
     }
   }
 

@@ -13,15 +13,16 @@
   }
 
   .contacts__title {
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.5rem;
     font-weight: bold;
     font-size: 1.4rem;
   }
 
   .contacts__text {
+    line-height: 1.2rem;
     margin-bottom: 1.3rem;
-    font-size: 0.9rem;
-    color: $grey;
+    font-size: 1rem;
+    color: $white;
   }
 
   .contacts__list {

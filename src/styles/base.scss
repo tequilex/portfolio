@@ -1,27 +1,21 @@
 @import './mixins.scss';
 
 @font-face {
-  font-family: 'minecraft';
-  src: url('../Fixedsys62.ttf');
+  font-family: 'shentox';
+  src: url('../Shentox.ttf');
 }
 
 body {
   margin: 0;
-  font-family: 'minecraft';
+  font-family: 'shentox';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: $dark;
-  // background: url('../../public/images/back3.gif') center center;
   color: $white;
-  // backdrop-filter: blur(50px);
   font-size: 16px;
 
   @include laptop {
     font-size: 15px;
-  }
-
-  @include tablets {
-    font-size: 14px;
   }
 }
 
