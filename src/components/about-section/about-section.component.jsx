@@ -2,7 +2,8 @@ import { React, useState } from "react";
 
 import TabButton from "../tabButton/tabButton.component";
 
-import aboutImg from "../../assets/about-image.png";
+// import aboutImg from "../../assets/pepe.gif";
+import {ReactComponent as ReactLogo} from "../../assets/about3.svg"
 
 import "./about-section.styles.scss";
 
@@ -50,7 +51,8 @@ const AboutSection = () => {
   return (
     <div className="about" id="about">
       <div className="about__img-wrapper">
-        <img className="about__img" src={aboutImg} alt="about_image" />
+        <ReactLogo className="about__img2" />
+        {/* <img className="about__img" src={aboutImg} alt="about_image" /> */}
       </div>
       <div className="about__info">
         <h2 className="about__title">Обо мне</h2>

@@ -15,12 +15,34 @@
     min-width: 350px;
     // min-width: 430px;
     flex: 1;
+  // position: relative;
+
 
     @include tablets {
       max-width: 350px;
       min-width: 250px;
     }
+
+    @include tablets-min {
+      max-width: 250px;
+      min-width: 150px
+    }
   }
+
+  .about__img2 {
+    // position: absolute;
+    fill: $green;
+    animation: about__img2 20s linear infinite ;
+
+  
+    @keyframes about__img2 {
+      from{}
+      to{
+        transform: rotate(360deg);
+      }
+    }
+  }
+
 
   .about__info {
     display: flex;
