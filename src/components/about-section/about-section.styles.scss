@@ -15,8 +15,6 @@
     min-width: 350px;
     // min-width: 430px;
     flex: 1;
-  // position: relative;
-
 
     @include tablets {
       max-width: 350px;
@@ -30,7 +28,6 @@
   }
 
   .about__img2 {
-    // position: absolute;
     fill: $green;
     animation: about__img2 20s linear infinite ;
 

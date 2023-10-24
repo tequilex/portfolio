@@ -74,6 +74,31 @@
     }
   }
   
+  .img__wrapper {
+    height: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    // background: linear-gradient(180deg, rgba(34, 35, 36, 0) 60%, rgb(32, 182, 32) 200%);
+    border-radius: 60px;
+
+    @include laptop {
+      height: 250px;
+      max-width: 250px;
+      min-width: 250px;
+    }
+
+    @include tablets {
+      height: 225px;
+      max-width: 225px;
+      min-width: 225px;
+    }
+  }
+
+  .img__avatar {
+    border-radius: 100%;
+    
+  }
+
   .hero__avatar-wrapper {
     position: relative;
     height: 300px;

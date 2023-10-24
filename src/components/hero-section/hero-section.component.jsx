@@ -2,6 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import avatar from "../../assets/sticker.png";
+import photo from "../../assets/photo4.JPG";
 import resume from '../../resume.pdf'
 import "./hero-section.styles.scss";
 
@@ -41,9 +42,14 @@ export const HeroSection = () => {
             <a href={resume} className="hero__button" download='resume_andrew_tequilex'>Скачать резюме</a>
           </div>
         </div>
-        <div className="hero__avatar-wrapper">
-          <img className="hero__avatar" src={avatar} alt="avatar" />
+
+        <div className="img__wrapper">
+          <img className="img__avatar" src={photo} alt="ava" />
         </div>
+
+        {/* <div className="hero__avatar-wrapper">
+          <img className="hero__avatar" src={avatar} alt="avatar" />
+        </div> */}
       </motion.div>
     </div>
   );
