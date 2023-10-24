@@ -10,9 +10,10 @@ body {
   font-family: 'shentox';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: $dark;
-  color: $white;
+  background: var(--background-color);
+  color: var(--text-color);
   font-size: 16px;
+  transition: 0.3s linear;
 
   @include laptop {
     font-size: 15px;
@@ -49,6 +50,21 @@ body::-webkit-scrollbar-thumb {
   @include phones {
     padding: 3rem 1.3rem;
   }
+}
+
+body[data-theme="light"] {
+  --background-color: rgb(114 170 98 / 20%);
+  --text-color: #121212;
+  --logo-color: #000;
+  --cards-background: rgb(114 170 98 / 20%);
+  
+}
+
+body[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #fff;
+  --logo-color: #fff;
+  --cards-background: rgba(53, 52, 52, 0.2);
 }
 
 // 1310px
