@@ -30,7 +30,7 @@ const ProjectCard = ({ project, index }) => {
     <motion.div
       ref={ref}
       className="project__wrapper"
-      transition={{ duration: 0.3, delay: index * 0.4 }}
+      transition={{ duration: 0.3, delay: index * 0.3 }}
       variants={cardVariants}
       initial="initial"
       animate={isInView ? "animate" : "initial"}

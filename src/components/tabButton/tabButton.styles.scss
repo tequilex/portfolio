@@ -4,6 +4,11 @@
 .tab__button {
   font-size: 1.05rem;
   font-weight: bold;
+  transition: 0.3s linear;
+
+  &:hover {
+    color: red;
+  }
 
   .tab__button-text {
   }

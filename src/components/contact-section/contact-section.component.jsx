@@ -1,3 +1,6 @@
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+
 import { ReactComponent as GithubLogo } from "../../assets/github.svg";
 import { ReactComponent as VkLogo } from "../../assets/vk-circled.svg";
 import { ReactComponent as WhatsAppLogo } from "../../assets/whatsapp.svg";
@@ -8,9 +11,25 @@ import Form from "../form/form.component";
 
 import "./contact-section.styles.scss";
 
+const variants = {
+  initial: { opacity: 0, scale: 0.5 },
+  animate: { opacity: 1, scale: 1 },
+};
+
 const ContactSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className="contacts" id="contacts">
+    <motion.div
+      className="contacts"
+      id="contacts"
+      ref={ref}
+      variants={variants}
+      initial="initial"
+      animate={isInView ? "animate" : "initial"}
+      transition={{ delay: 0.5 }}
+    >
       <div className="contacts__wrapper">
         <div className="contacts__title">Контакты</div>
         <p className="contacts__text">
@@ -59,7 +78,7 @@ const ContactSection = () => {
         </ul>
       </div>
       <Form />
-    </div>
+    </motion.div>
   );
 };
 export default ContactSection;

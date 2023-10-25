@@ -8,7 +8,12 @@ $dark: #28292c;
     right: 20px;
     z-index: 50;
     height: 50px;
-  }
+
+    &:hover {
+      .slider{
+        transform: scale(1.05);
+      }
+    }
   
   .toggle__wrap {
     position: absolute;
@@ -17,7 +22,6 @@ $dark: #28292c;
     border-radius: 50px;
     cursor: pointer;
   }
-  
   
   .slider {
     position: absolute;
@@ -47,7 +51,6 @@ $dark: #28292c;
     background-color: $light;
     transition: 0.3s;
     transform: translateX(50px);
-
   }
   
   .slider.dark::before {
@@ -62,3 +65,5 @@ $dark: #28292c;
     background-color: $dark;
     transition: 0.3s;
   }
+}
+  
