@@ -62,6 +62,35 @@ const projects = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/tequilex/webpack-tequilex",
   },
+  {
+    id: 7,
+    title: "AmiraFest - freelance project",
+    description:
+      "Веб-приложение для участников фестиваля. Создана админ-панель, для отображения информации о зарегистрированных участниках фестиваля (выбранные пакеты и их стоимость, личная информация и другое). Использовалась база данных FireBase.",
+    image: "./images/projects/amirafest.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/tequilex/mirafest",
+    previewUrl: "https://amirafest.vercel.app/",
+  },
+  {
+    id: 8,
+    title: "Crown-clothing",
+    description:
+      "Учебный проект crwn-clothing. Реализация интернет магазина одежды. Реализована навигация, отображение товаров из базы данных, возможность положить товары в корзину, с подсчетом общей стоимости. Использована бд google firebase.",
+    image: "./images/projects/crwn-clothing.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/tequilex/crwn-clothing",
+    previewUrl: "#",
+    
+  },
+  {
+    id: 9,
+    title: "В работе",
+    description:
+      "Проект находится в разработке",
+    image: "./images/projects/plug.png",
+    tag: ["All", "Web"],
+  },
 ];
 
 const ProjectsSection = () => {

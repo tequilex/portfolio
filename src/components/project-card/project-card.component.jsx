@@ -38,9 +38,11 @@ const ProjectCard = ({ project, index }) => {
       <div className="project__img-container">
         <Click className="click" />
         <div className="overlay">
-          <a href={gitUrl} className="link" target="_blank" rel="noreferrer">
-            <Brackets className="icon__url" />
-          </a>
+          {gitUrl && (
+            <a href={gitUrl} className="link" target="_blank" rel="noreferrer">
+              <Brackets className="icon__url" />
+            </a>
+          )}
           {previewUrl && (
             <a
               href={previewUrl}
@@ -54,14 +56,16 @@ const ProjectCard = ({ project, index }) => {
         </div>
         <img className="project__img" src={image} alt={`${title}`} />
       </div>
-      <div className="project__title">
-        {title}
-      </div>
+      <div className="project__title">{title}</div>
       <div className={isActive}>{description}</div>
       {!open ? (
-        <div onClick={activeToggler} className="toggle">Развернуть</div>
+        <div onClick={activeToggler} className="toggle">
+          Развернуть
+        </div>
       ) : (
-        <div onClick={activeToggler} className="toggle">Свернуть</div>
+        <div onClick={activeToggler} className="toggle">
+          Свернуть
+        </div>
       )}
     </motion.div>
   );
